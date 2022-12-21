@@ -43,6 +43,8 @@ export default function Navbar() {
                     <ul className="dropdown-menu bg-black">
                         <li><Link to={"/SignIn"}><p className="dropdown-item text-white"> Sign In</p></Link></li>
                         <li><Link to={"/SignUp"}> <p className="dropdown-item text-white"> Sign Up</p></Link></li>
+                        <li><Link to={"/myprofile"}><p className="dropdown-item text-white"> My profile</p></Link></li>
+                        <li><Link to={"/"}> <p className="dropdown-item text-white"> Logout</p></Link></li>
                     </ul>
                 </li>
                 <p> <Link to={"/shopping"}><img className="cart-logo" src="img/carrito.png" alt="cart logo" />  </Link></p>
