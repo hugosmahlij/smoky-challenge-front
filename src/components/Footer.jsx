@@ -41,7 +41,8 @@ export default function Footer() {
             </div>
 
             <div className="footer-container2 text-white d-flex justify-content-center py-2">
-                <h6>Smoky Vape Shop® 2022 | By Hugo, Rochi, Pili, Juan, Caro, Andy y Meli ♥</h6>
+                <h6>Smoky Vape Shop® 2022 |
+                    Developed by hugosmahlij, RocioDuarteBazan, juan-francoa, pilisalto, Raulmoyano2970, CarolinaPerez1992, y MelissaUribeRojas21 - find us on Github</h6>
             </div>
 
         </footer>

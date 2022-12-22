@@ -700,46 +700,25 @@ div {
 
 
 /* FILTERS */
-
-.filter-container div label {
-    cursor: pointer;
+.filter-container {
+    background-color: #0000008e;
+    width: 100%;
 }
 
-.filter-container div label input[type="checkbox"] {
-    display: none;
+.checkbox-container {
+    color: white;
+    font-size: 1.5em;
 }
 
-.filter-container div label span {
-    position: relative;
-    display: inline-block;
-    background: #424242;
-    padding: 15px 30px;
-    color: #555;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
-    border-radius: 30px;
-    font-size: 20px;
-    transition: 0.5s;
-    user-select: none;
-    overflow: hidden;
+.checkbox-container input {
+    width: .8em;
 }
 
-
-
-.filter-container div:nth-child(2n + 1) label input[type="checkbox"]:checked~span {
-    background: #FF26A9;
-    color: #fff;
-    box-shadow: 0 2px 20px #FF26A9;
-}
-
-.filter-container div:nth-child(2n + 2) label input[type="checkbox"]:checked~span {
-    background: #58CDFF;
-    color: #fff;
-    box-shadow: 0 2px 20px #58CDFF;
-}
 
 /* SEARCH */
 .box {
     width: 25%;
+    padding: .5em;
 }
 
 .box .search-box {
@@ -747,14 +726,15 @@ div {
     width: 100%;
     height: 8vh;
     margin: auto;
-   
     border-radius: 25px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .search-box input {
     position: absolute;
-    height: 60%;
     width: 100%;
+    height: 80%;
     border-radius: 25px;
     background: #fff;
     outline: none;
@@ -764,17 +744,15 @@ div {
 }
 
 .icon {
-    position: absolute;
-    right: -20px;
-    top: 0;
     width: 50px;
-    background: #383838;
-    height: 60%;
+    height: 80%;
+    background: #000000;
     text-align: center;
     line-height: 50px;
     border-radius: 0 25px 25px 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
+    z-index: 1;
 }
 
 .icon img {
@@ -792,4 +770,90 @@ div {
     display: flex;
     justify-content: center;
     font-size: 3em;
+}
+
+/* CORREO VERIFICACIÓN */
+.minimain-container {
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    width: 60%;
+    height: 30vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.minimain-container p {
+    text-align: center;
+    padding: 1em;
+    width: 80%;
+}
+
+.minimain-container button{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #00b7ff;
+    border: transparent;
+    border-radius: 1em;
+    color: white;
+    margin-bottom: 1em;
+    box-shadow: rgba(19, 19, 19, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.miniheader-container {
+    background-color: black;
+    width: 60%;
+    height: auto;
+    display: flex;
+    gap: 2em;
+    padding: 1.5em;
+    border-radius: 1em 1em 0 0;
+}
+
+.minilogo-container img {
+    width: 8rem;
+
+}
+
+.minitext-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.minifooter-container {
+    background-color: #000000;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    color: white;
+    border-radius: 0 0 1em 1em;
+}
+
+.minifooter-container div {
+    padding-top: 1em;
+    ;
+}
+
+.miniredes-container {
+    display: flex;
+    gap: 1em
+}
+
+.miniredes-container img {
+    width: 2em;
+}
+
+.minitext-container h1 {
+    text-shadow: 0 0 5px #24b6f4, 0 0 10px #58CDFF, 0 0 15px #58CDFF, 0 0 20px #58CDFF, 0 0 25px #58CDFF, 0 0 30px #58CDFF, 0 0 35px #58CDFF;
+}
+
+.minitext-container h5 {
+    text-shadow: 0 0 5px #FF2D95, 0 0 10px #FF2D95, 0 0 15px #FF2D95, 0 0 20px #FF2D95, 0 0 25px #FF2D95, 0 0 30px #FF2D95, 0 0 35px #FF2D95;
 }
